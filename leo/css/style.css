@@ -1,0 +1,507 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+
+@font-face {
+  font-family: "MrsEavesItalic";
+  src: url(/fonts/MRSEAVEI.otf);
+}
+
+@font-face {
+  font-family: "SegoeWP";
+  src: url(/fonts/SegoeWPLight.ttf);
+}
+
+@font-face {
+  font-family: "SegoeWPN";
+  src: url(/fonts/SegoeWPN.ttf);
+}
+
+@font-face {
+  font-family: "SegoeWPNSemibold";
+  src: url(/fonts/SegoeWPSemibold.ttf);
+}
+
+@font-face {
+  font-family: "UniverseCE";
+  src: url(/fonts/UniversCELight.ttf);
+}
+
+::-webkit-input-placeholder {
+  color: #4f4f4f;
+  font-family: "SegoeWP";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.wraper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 530px;
+  padding-top: 56px;
+  margin-bottom: 29px;
+}
+
+.header .arrow-left {
+  display: block;
+  position: absolute;
+  left: calc(50% - 588px);
+  top: 279px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.header .arrow-right {
+  display: block;
+  position: absolute;
+  right: calc(50% - 588px);
+  top: 279px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 490px;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  z-index: 0;
+}
+
+.header .top {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 68px;
+}
+
+.top .logo p {
+  font-family: "MrsEavesItalic";
+  font-size: 119px;
+  line-height: 76px;
+  color: #ffffff;
+  opacity: 0.68;
+  margin: 0 189px 0 87px;
+}
+
+.navbar {
+  width: 476px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top .navbar .link {
+  font-family: "SegoeWP";
+  font-size: 23px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.top .navbar .link:last-child {
+  margin-right: 0;
+}
+
+.header .bottom {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.header .bottom .picture {
+  margin: 0 72px 0 120px;
+}
+
+.header .bottom .descriptions p {
+  font-size: 65px;
+  color: #ffffff;
+  font-family: "SegoeWPNSemibold";
+  margin-bottom: 28px;
+}
+
+.header .bottom .descriptions p span {
+  font-family: "SegoeWP";
+  font-size: 45px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 15px;
+}
+
+.header .bottom .descriptions .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 138px;
+  height: 38px;
+  background-color: #216746;
+  box-shadow: 0 0 4px black;
+  font-family: "SegoeWP";
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.middle {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.middle .website {
+  padding: 26px 54px 53px 54px;
+  text-align: center;
+  position: relative;
+}
+
+.middle .website:hover p {
+  color: #5f5f5f;
+  font-weight: 900;
+}
+
+.middle .website:hover {
+  box-shadow: darkgray 0 0 2px;
+}
+
+.middle .website .picture {
+  margin-bottom: 22px;
+}
+
+.middle .website p {
+  font-family: "SegoeWP";
+  color: #5c5b5b;
+  font-size: 27px;
+  font-weight: 300;
+  width: 151px;
+}
+
+.middle .website p span {
+  font-size: 23px;
+}
+
+.middle .website:first-child {
+  padding-left: 48px;
+}
+
+.middle .website:last-child {
+  padding-right: 48px;
+}
+
+.content {
+  padding: 59px 72px 68px 54px;
+  box-shadow: darkgray 0 0 2px;
+  margin-bottom: 22px;
+}
+
+.content .picture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+.content .text p:first-child {
+  font-family: "SegoeWP";
+  font-size: 39px;
+  font-weight: 300;
+  color: #4f4f4f;
+  margin-bottom: 28px;
+}
+
+.content .text p:last-child {
+  margin-top: 34px;
+}
+
+.content .text .desc {
+  font-family: "UniverseCE";
+  font-weight: 300;
+  line-height: 24px;
+  color: #818181;
+}
+
+.why-us {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.why-us > .picture {
+  margin-right: 54px;
+  margin-bottom: 56px;
+}
+
+.why-us .text > p {
+  font-family: "SegoeWP";
+  font-size: 33px;
+  color: #4f4f4f;
+  margin-top: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us .text .li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.why-us .text .li .picture {
+  margin-right: 12px;
+}
+
+.why-us .text .li p {
+  font-family: "UniverseCE";
+  font-size: 16px;
+  color: #8a8888;
+  width: 560px;
+}
+
+.block-form {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.block-form::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  background-color: #e5e5e5;
+}
+
+.form {
+  width: 470px;
+  height: 109px;
+  margin: 23px 0 35px 0;
+  padding: 15px 0 0 28px;
+}
+
+.form p {
+  font-family: "SegoeWP";
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.form input,
+.form button {
+  font-family: "SegoeWP";
+  height: 26px;
+  font-size: 16px;
+}
+
+.form-1 {
+  background-color: #e67624;
+  margin-right: 66px;
+}
+
+.form-1 input {
+  width: 150px;
+  margin-right: 12px;
+  background-color: #e8e8e8;
+  padding-left: 12px;
+}
+
+.form-1 input:first-child {
+  width: 155px;
+}
+
+.form button {
+  width: 94px;
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.form-2 {
+  background-color: #01d4f3;
+}
+
+.form-2 input {
+  width: 265px;
+  margin-right: 49px;
+  background-color: #e8e8e8;
+  padding-left: 12px;
+}
+
+.form-2 button {
+  width: 111px;
+}
+
+.footer {
+  position: relative;
+  height: 243px;
+  width: 100%;
+  background-color: #2a262b;
+  padding: 34px 0 0 46px;
+}
+
+.footer .wraper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+
+.footer .wraper .about-us {
+  margin-right: 89px;
+}
+
+.footer .wraper .about-us p {
+  font-family: "SegoeWP";
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+
+.footer .wraper .about-us li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #858584;
+
+}
+
+.footer .wraper .about-us li {
+  margin-bottom: 11px;
+}
+
+.footer .wraper .test {
+  max-width: 316px;
+  margin-right: 44px;
+}
+
+.footer .wraper .test p:first-child {
+  font-family: "SegoeWP";
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer .wraper .test p:first-child + p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: #858584;
+  margin-bottom: 11px;
+}
+
+.footer .wraper .test p:nth-last-child(-n+2) {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 11px;
+  color: #b6b6b6;
+}
+
+.footer .wraper .logo p:first-child {
+  font-family: "MrsEavesItalic";
+  font-size: 119px;
+  line-height: 76px;
+  color: #57575a;
+  opacity: 0.68;
+  margin-top: 32px;
+  margin-bottom: 38px;
+}
+
+.footer .wraper .logo p:last-child {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #b6b6b6;
+}
+
+.arrows {
+  position: absolute;
+  top: 38px;
+  left: calc(50% + 117px);
+  display: flex;
+  flex-flow: row nowrap;
+  height: 17px;
+}
+
+.arrows img{
+  display: block;
+  margin-right: 8px;
+  cursor: pointer;
+}
